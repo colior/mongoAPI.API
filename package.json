@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://Cyclist01@bitbucket.org/Cyclist01/mongoapinodejs.git"
+    "url": "git+https://Cyclist01@bitbucket.org/Cyclist01/mongoapi.nodejs.git"
   },
   "keywords": [
     "RESTful",
@@ -16,7 +16,7 @@
   ],
   "author": "Cyclist",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/Cyclist01/mongoapinodejs#readme",
+  "homepage": "https://bitbucket.org/Cyclist01/mongoapi.nodejs",
   "devDependencies": {
     "nodemon": "^1.17.3"
   },
