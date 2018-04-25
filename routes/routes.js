@@ -14,9 +14,12 @@ module.exports = function(app) {
     .put(userController.updateUser)
     .delete(userController.deleteUser);
 
-    app.route('/history')
-    .get(historyController.getAllHistory)
-    .post(historyController.newHistory);
+  app.route('/users/validate/:Username')
+  .get(userController.validateUsername);
+
+  app.route('/history')
+  .get(historyController.getAllHistory)
+  .post(historyController.newHistory);
 
 
   app.route('/history/:Id')

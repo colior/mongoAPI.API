@@ -36,9 +36,17 @@ exports.updateUser = function(req, res){
 };
 
 exports.deleteUser = function(req, res){
-	User.remove({Username: req.params.Username}, function(err, user) {
-    	if (err)
-      		res.send(err);
+  User.remove({Username: req.params.Username}, function(err, user) {
+      if (err)
+          res.send(err);
     res.json({ message: 'User successfully deleted' });
   });
+};
+
+exports.validateUsername = function(req, res){
+  User.find({Username: req.params.Username}, function(err, user) {
+      if (err)
+          res.send(err);
+    res.json(user);
+  }).select({"Username": 1, "_id": 0});
 };
