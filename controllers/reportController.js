@@ -7,7 +7,7 @@ var mongoose = require('mongoose'),
   		if(err)
   			res.send(err);
   		res.json(report);
-  	}).select({ "Username": 1, "Time": 1, "Description": 1, "IsActive": 1});
+  	}).select({ "Username": 1, "Destination": 1, "Time": 1, "Description": 1, "IsActive": 1});
   };
 
 exports.newReport = function(req, res){
@@ -24,7 +24,7 @@ exports.getReportsByUsername = function(req, res){
       if(err)
         res.send(err);
       res.json(report);
-    }).select({ "Username": 1, "Time": 1, "Description": 1, "IsActive": 1});
+    }).select({ "Username": 1, "Destination": 1, "Time": 1, "Description": 1, "IsActive": 1});
   };
 
   exports.getReport = function(req, res){
@@ -32,7 +32,7 @@ exports.getReportsByUsername = function(req, res){
       if(err)
         res.send(err);
       res.json(report);
-    }).select({ "Username": 1, "Time": 1, "Description": 1, "IsActive": 1});
+    }).select({ "Username": 1, "Destination": 1, "Time": 1, "Description": 1, "IsActive": 1});
   };
 
 exports.updateReport = function(req, res){

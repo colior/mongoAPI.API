@@ -7,6 +7,10 @@ var ReportSchema = new Schema({
     type: String,
     require: true
   },
+  Destination:{
+    type: String,
+    require: true
+  },
   Time: {
     type: Date
   },
